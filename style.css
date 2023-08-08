@@ -1,0 +1,222 @@
+/*Fontes impostadas do google fonte e alterações que afetam a página inteira.*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito', sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/*Estilização do header c/ logo e menu clicavel com scroll.*/
+.conteudo-header{
+    width: 100%;
+    height: 90px;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a2b8cc;
+}
+.menu-fixo{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+header img{
+    width: 80px;
+    height: auto;
+    padding: 0.5rem;
+    margin-left: 3rem;
+}
+/*Estilização do Menu clicavel.*/
+.menu{
+    margin-right: 5rem;
+}
+.menu ul{
+    gap: .6rem;
+    display: flex;
+    list-style-type: none;
+}
+.menu a{
+    /*Resolver questão de quebra de linha no botão do menu*/
+    font-size: 1.6rem;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 400ms ease-in;
+    color: floralwhite;
+}
+.menu li a:hover{
+    background-color: #6ea3d1;
+}
+.banner{
+    width: 100%;
+    height: 40em;
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/image-banner\ \(3\).jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+main{
+    background-color: #8FB3D2;
+}
+.conteudo-ods{
+    width: 100%;
+    height: 550px;
+}
+.ods{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+}
+.ods h2{
+    font-family: 'nunita';
+    font-size: 5rem;
+    text-align: center;
+}
+.ods p{
+    font-family: 'nunita', sans-serif;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.button{
+    background-color: #5297d3;
+    color: #000000;
+    border: solid 1px #1472c4;
+    border-radius: 4px;
+    padding: 1rem;
+}
+.button a{
+    text-decoration: none;
+    color: #000000;
+}
+.apresentacao-pagina h2{
+    font-family: 'nunita';
+    font-size: 8rem;
+    padding-top: 10rem;
+    text-align: center;
+    color: #00315c;
+}
+.texto-conteudo img{
+    width: 450px;
+    height: 380px;
+    /*padding: 0.5rem;*/
+    margin: 1rem;
+    border: solid 2px black;
+    border-radius: 5px;
+    float: left;
+    clear: both;
+}
+.conteudo-1 h2,.conteudo-2 h2,footer h2{
+    font-family: 'nunita', sans-serif;
+    font-size: 2.5rem;
+    padding: 10rem 0 2rem 0;
+    text-align: center;
+}
+.texto-conteudo p{
+    color: black;
+    font-family: 'nunita',sans-serif;
+    font-size: 1.6rem;
+    padding-top: 2rem;
+    margin: 1.5rem 1rem;
+}
+.texto-conteudo-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-conteudo-2 p{
+    color: black;
+    font-family: 'nunita',sans-serif;
+    font-size: 1.6rem;
+    margin: 1.5rem 1rem;
+    padding-top: 2rem;
+}
+.texto{
+    flex-direction: column;
+}
+.texto-conteudo-2 img{
+    width: 450px;
+    height: 350px;
+    margin: 1rem;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+.conteudo-3{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video{
+    border: solid 3px #5297d3;
+    border-radius: 3px;
+    padding: 2rem;
+    margin: 2rem;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #6ea3d1;
+}
+.creditos-links{
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+.creditos-links ul li{
+    width: 200px;
+    border-bottom: solid 1px #00315c;
+    list-style-type: none;
+}
+.creditos-links ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.assinatura{
+    justify-content: center;
+    align-items: center;
+    display:inline-block
+}
+.assinatura h2{
+    font-size: 2.5rem;
+}
+.assinatura p{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 802px){
+    .texto-conteudo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .texto-conteudo-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
